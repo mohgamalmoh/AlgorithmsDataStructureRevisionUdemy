@@ -21,7 +21,7 @@ function memoize(fnc){
     }
 }
 
-function oldfib(n) {
+function slowFib(n) {
     if(n < 2){
         return n
     }
@@ -31,5 +31,5 @@ function oldfib(n) {
 
 
 
-const fib = memoize(oldfib)
+const fib = memoize(slowFib)
 module.exports = fib;
